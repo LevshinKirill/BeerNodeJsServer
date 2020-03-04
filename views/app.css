@@ -1,0 +1,32 @@
+.addressesBlock {
+    padding-left: 70px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+}
+
+table {
+    border: solid 2px;
+    background-color: rgb(64, 148, 201);
+    color: white;
+}
+
+th{
+    padding: 20px;
+}
+
+td{
+    background-color: white;
+    padding: 20px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    text-decoration: none;
+    color:gray;
+}

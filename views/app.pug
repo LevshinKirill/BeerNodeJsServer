@@ -1,0 +1,27 @@
+html
+    head
+         style
+             include ./app.css
+    body
+        each group,key in breweriesGroupedByState
+            div
+                h3= key
+            each b in group 
+                div(class="addressesBlock")= b.getFullAddress()
+
+        table.table.table-striped
+            tr
+                th Id
+                th Name
+                th FullAddress
+                th Phone
+                th Address
+
+                each b in filteredBreweries
+                    tr
+                    td= b.id
+                    td= b.name
+                    td= b.getFullAddress()
+                    td= b.phone
+                    td= b.address
+                        a(href=b.website_url)= "Web Site"
